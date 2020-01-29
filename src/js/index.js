@@ -39,20 +39,20 @@ function render(variables = {}) {
   if (variables.city != null) city = variables.city;
 
   let country = "USA";
-  if (variables.country != null) city = variables.country;
+  if (variables.country != null) country = variables.country;
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${myName} ${myLastName}</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h2>${role}</h2>
+          <h3>${Miami, USA}</h3>
           <ul class="${mySocialMediaPositon}">
-            <li><a href="https://twitter.com/$(twitter)"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://github.com/$(github)"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/$(linkedin)"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/$(instagram)"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/${twitter}"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${github}"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/${linkedin}"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://instagram.com/${instagram}"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
